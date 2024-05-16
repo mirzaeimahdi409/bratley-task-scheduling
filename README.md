@@ -46,7 +46,7 @@ The input JSON file should contain an array of tasks, where each task is an obje
 ```
 ## Output Example
 ```
-    Scheduled: [], To schedule: [0, 1, 2, 3, 4], Current time: 0
+Scheduled: [], To schedule: [0, 1, 2, 3, 4], Current time: 0
     Scheduled: [0], To schedule: [1, 2, 3, 4], Current time: 3
     Scheduled: [1], To schedule: [0, 2, 3, 4], Current time: 3
     Scheduled: [2], To schedule: [0, 1, 3, 4], Current time: 3
@@ -63,8 +63,8 @@ The input JSON file should contain an array of tasks, where each task is an obje
         Scheduled: [4, 2], To schedule: [0, 1, 3], Current time: 3
         Scheduled: [4, 3], To schedule: [0, 1, 2], Current time: 5
 
-    ####--------------- Final Result ---------------####
+####--------------- Final Result ---------------####
 
-    Optimal task order: [4, 1, 2, 3, 0]
-    Optimal schedule (start times): [6, 1, 3, 4, 0]
+Optimal task order: [4, 1, 2, 3, 0]
+Optimal schedule (start times): [6, 1, 3, 4, 0]
 ```
