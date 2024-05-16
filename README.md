@@ -45,7 +45,7 @@ The input JSON file should contain an array of tasks, where each task is an obje
 ]
 ```
 ## Output Example
-```json
+```
     Scheduled: [], To schedule: [0, 1, 2, 3, 4], Current time: 0
     Scheduled: [0], To schedule: [1, 2, 3, 4], Current time: 3
     Scheduled: [1], To schedule: [0, 2, 3, 4], Current time: 3
