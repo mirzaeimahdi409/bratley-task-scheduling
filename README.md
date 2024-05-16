@@ -46,25 +46,26 @@ The input JSON file should contain an array of tasks, where each task is an obje
 ```
 ## Output Example
 ```
-Scheduled: [], To schedule: [0, 1, 2, 3, 4], Current time: 0
-    Scheduled: [0], To schedule: [1, 2, 3, 4], Current time: 3
-    Scheduled: [1], To schedule: [0, 2, 3, 4], Current time: 3
-    Scheduled: [2], To schedule: [0, 1, 3, 4], Current time: 3
-    Scheduled: [3], To schedule: [0, 1, 2, 4], Current time: 5
-    Scheduled: [4], To schedule: [0, 1, 2, 3], Current time: 1
-        Scheduled: [4, 0], To schedule: [1, 2, 3], Current time: 4
-        Scheduled: [4, 1], To schedule: [0, 2, 3], Current time: 3
-        Scheduled: [4, 1, 0], To schedule: [2, 3], Current time: 6
-        Scheduled: [4, 1, 2], To schedule: [0, 3], Current time: 4
-            Scheduled: [4, 1, 2, 0], To schedule: [3], Current time: 7
-            Scheduled: [4, 1, 2, 3], To schedule: [0], Current time: 6
-            Scheduled: [4, 1, 2, 3, 0], To schedule: [], Current time: 9
-        Scheduled: [4, 1, 3], To schedule: [0, 2], Current time: 5
-        Scheduled: [4, 2], To schedule: [0, 1, 3], Current time: 3
-        Scheduled: [4, 3], To schedule: [0, 1, 2], Current time: 5
+Scheduled: [], Remaining: [0, 1, 2, 3, 4], Current time: 0
+  Scheduled: [0], Remaining: [1, 2, 3, 4], Current time: 3
+  Scheduled: [1], Remaining: [0, 2, 3, 4], Current time: 3
+  Scheduled: [2], Remaining: [0, 1, 3, 4], Current time: 3
+  Scheduled: [3], Remaining: [0, 1, 2, 4], Current time: 5
+  Scheduled: [4], Remaining: [0, 1, 2, 3], Current time: 1
+    Scheduled: [4, 0], Remaining: [1, 2, 3], Current time: 4
+    Scheduled: [4, 1], Remaining: [0, 2, 3], Current time: 3
+      Scheduled: [4, 1, 0], Remaining: [2, 3], Current time: 6
+      Scheduled: [4, 1, 2], Remaining: [0, 3], Current time: 4
+        Scheduled: [4, 1, 2, 0], Remaining: [3], Current time: 7
+        Scheduled: [4, 1, 2, 3], Remaining: [0], Current time: 6
+          Scheduled: [4, 1, 2, 3, 0], Remaining: [], Current time: 9
+      Scheduled: [4, 1, 3], Remaining: [0, 2], Current time: 5
+    Scheduled: [4, 2], Remaining: [0, 1, 3], Current time: 3
+    Scheduled: [4, 3], Remaining: [0, 1, 2], Current time: 5
 
 ####--------------- Final Result ---------------####
 
 Optimal task order: [4, 1, 2, 3, 0]
 Optimal schedule (start times): [6, 1, 3, 4, 0]
+Maximum lateness: 0
 ```
